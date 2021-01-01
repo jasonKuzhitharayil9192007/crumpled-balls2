@@ -1,4 +1,4 @@
-//this is mu crumpled balls 2
+//this is my crumpled balls 2
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
@@ -8,7 +8,7 @@ var ground,ball;
 var binImg,bin;
 
 function preload(){
-    binImg = loadImage("Images/dustbingreen.png");
+    binImg = loadImage("dustbin.png");
 }
 function setup(){
     var canvas = createCanvas(1200,600);
@@ -22,13 +22,13 @@ function setup(){
     bin.addImage(binImg);
     bin.scale = 0.45;
 
-    binPart1 = new Dustbin(902,505,10,120);
-    binPart2 = new Dustbin(962,565,130,10);
-    binPart3 = new Dustbin(1024,505,10,120);
+    binPart1 = new Dustbin(915,505,10,120);
+    binPart2 = new Dustbin(962,565,110,10);
+    binPart3 = new Dustbin(1014,505,10,110);
 }
 
 function draw(){
-    background("black");
+    background(155,155,155);
     Engine.update(engine);
 
     
